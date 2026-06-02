@@ -29,6 +29,8 @@ export class App {
 
   protected readonly emailUrl = `mailto:${this.email}`;
 
+  protected readonly crn = 'CRN-6: 49180/P';
+
   protected readonly specialties = [
     {
       title: 'Emagrecimento',

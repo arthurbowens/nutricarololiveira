@@ -41,6 +41,7 @@
           height="140"
         />
         <span class="logo-header-subtitle">Nutricionista</span>
+        <span class="logo-header-crn">{{ crn }}</span>
       </a>
       <a
         [href]="whatsappUrl"
@@ -60,7 +61,7 @@
         <p
           class="mb-3 font-sans text-xs font-medium uppercase tracking-[0.35em] text-taupe"
         >
-          Nutricionista
+          Nutricionista · {{ crn }}
         </p>
         <h1
           class="font-script text-5xl leading-tight text-forest md:text-6xl lg:text-7xl"
@@ -312,6 +313,7 @@
           @{{ instagramHandle }}
         </a>
       </div>
+      <p class="text-xs font-medium uppercase tracking-widest text-taupe">{{ crn }}</p>
       <p class="text-sm text-[#5c5854]">
         © {{ currentYear }} Carolina Oliveira. Todos os direitos reservados.
       </p>
