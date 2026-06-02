@@ -10,8 +10,8 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly currentYear = new Date().getFullYear();
 
-  /** Atualize com o WhatsApp da Carolina (DDI + DDD + número, só dígitos). */
-  protected readonly whatsappNumber = '5500000000000';
+  /** WhatsApp da Carolina (DDI + DDD + número, só dígitos). */
+  protected readonly whatsappNumber = '5581989860429';
 
   protected readonly whatsappMessage = encodeURIComponent(
     'Olá, Carolina! Vi sua página e gostaria de agendar uma consulta.',
@@ -24,6 +24,10 @@ export class App {
   protected readonly instagramHandle = 'oliveiraacaroll_';
 
   protected readonly instagramUrl = `https://www.instagram.com/${this.instagramHandle}/`;
+
+  protected readonly email = 'atendimentocarolinaoliveira@gmail.com';
+
+  protected readonly emailUrl = `mailto:${this.email}`;
 
   protected readonly specialties = [
     {
