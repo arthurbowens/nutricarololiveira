@@ -21,7 +21,7 @@ export class App {
     return `https://wa.me/${this.whatsappNumber}?text=${this.whatsappMessage}`;
   }
 
-  protected readonly instagramHandle = 'oliveiraacaroll_';
+  protected readonly instagramHandle = 'carolinaoliveiranutri_';
 
   protected readonly instagramUrl = `https://www.instagram.com/${this.instagramHandle}/`;
 
