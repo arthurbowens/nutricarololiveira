@@ -1,32 +1,32 @@
 <div class="relative min-h-screen overflow-x-hidden bg-cream text-[#3d3a38]">
-  <!-- Blobs decorativos -->
-  <svg
-    class="blob blob-top text-forest"
-    viewBox="0 0 400 400"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path
-      d="M320 80C380 140 400 220 360 300C320 380 220 400 140 360C60 320 0 240 20 160C40 80 120 20 200 10C280 0 260 20 320 80Z"
-    />
-  </svg>
-  <svg
-    class="blob blob-bottom text-forest"
-    viewBox="0 0 400 400"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path
-      d="M80 320C20 260 0 180 40 100C80 20 180 0 260 40C340 80 400 160 380 240C360 320 280 380 200 390C120 400 140 380 80 320Z"
-    />
-  </svg>
+  <!-- Blobs decorativos (contidos na tela, sem gerar scroll lateral) -->
+  <div class="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+    <svg
+      class="blob blob-top text-forest"
+      viewBox="0 0 400 400"
+      fill="currentColor"
+    >
+      <path
+        d="M320 80C380 140 400 220 360 300C320 380 220 400 140 360C60 320 0 240 20 160C40 80 120 20 200 10C280 0 260 20 320 80Z"
+      />
+    </svg>
+    <svg
+      class="blob blob-bottom text-forest"
+      viewBox="0 0 400 400"
+      fill="currentColor"
+    >
+      <path
+        d="M80 320C20 260 0 180 40 100C80 20 180 0 260 40C340 80 400 160 380 240C360 320 280 380 200 390C120 400 140 380 80 320Z"
+      />
+    </svg>
+  </div>
 
   <!-- Header -->
   <header
-    class="sticky top-0 z-20 overflow-visible border-b border-forest/8 bg-cream/92 backdrop-blur-md"
+    class="sticky top-0 z-20 border-b border-forest/8 bg-cream/92 backdrop-blur-md"
   >
     <div
-      class="relative z-10 mx-auto flex max-w-6xl items-center justify-between gap-3 overflow-visible px-5 py-3.5 md:gap-6 md:px-8 md:py-4"
+      class="relative z-10 mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5 md:gap-6 md:px-8 md:py-4"
     >
       <a
         href="#"
