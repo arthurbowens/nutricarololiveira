@@ -1,3 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+@theme {
+  --color-cream: #fef7f7;
+  --color-forest: #0b5b24;
+  --color-forest-dark: #08441c;
+  --color-taupe: #7a7570;
+  --color-pineapple: #e8a317;
+  --color-sage: #8fb996;
+  --font-script: "Great Vibes", cursive;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: #3d3a38;
+  -webkit-font-smoothing: antialiased;
+}

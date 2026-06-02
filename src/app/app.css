@@ -1,0 +1,79 @@
+:host {
+  display: block;
+}
+
+.blob {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob-top {
+  top: -8rem;
+  right: -6rem;
+  width: min(55vw, 28rem);
+  height: min(55vw, 28rem);
+}
+
+.blob-bottom {
+  bottom: -10rem;
+  left: -8rem;
+  width: min(60vw, 32rem);
+  height: min(60vw, 32rem);
+}
+
+@media (min-width: 768px) {
+  .blob-top {
+    top: -12rem;
+    right: -10rem;
+    width: 32rem;
+    height: 32rem;
+  }
+
+  .blob-bottom {
+    bottom: -14rem;
+    left: -12rem;
+    width: 36rem;
+    height: 36rem;
+  }
+}
+
+/* Logo completa no header — sem recorte */
+.logo-header-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.3rem;
+  overflow: visible;
+}
+
+.logo-header-img {
+  display: block;
+  width: auto;
+  height: 4.75rem;
+  max-width: min(21rem, 78vw);
+  object-fit: contain;
+  object-position: left center;
+}
+
+.logo-header-subtitle {
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+}
+
+@media (min-width: 768px) {
+  .logo-header-img {
+    height: 5.5rem;
+    max-width: 24rem;
+  }
+
+  .logo-header-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 0.48em;
+  }
+}
+
